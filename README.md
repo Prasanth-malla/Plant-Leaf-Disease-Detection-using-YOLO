@@ -77,7 +77,7 @@ dataset/
    !python detect.py --weights runs/train/yolov5s_results/weights/best.pt --img 128 --conf 0.15 --source test/images
    !python detect.py --weights runs/train/yolov5s_results/weights/best.pt --source test/images --save-conf
 
-YOLOv8
+### YOLOv8
 1. Predict using trained YOLOv8 model
    ```bash
    !yolo task=detect mode=predict model="runs/detect/train3/weights/best.pt" data=data.yaml source=test/images
@@ -91,13 +91,15 @@ YOLOv8
 📊 Analysis
 
 Visualize class distribution and number of images per class
-Example:
-     ```python
-     import pandas as pd
-     images_per_class = pd.DataFrame(map.values(), index=map.keys(), columns=["Number of Images"])
-     images_per_class['Labels'] = d.values()
-     images_per_class
 
+Example:
+
+ ```python
+ import pandas as pd
+ images_per_class = pd.DataFrame(map.values(), index=map.keys(), columns=["Number of Images"])
+ images_per_class['Labels'] = d.values()
+ images_per_class
+     
 📁 Project Structure
 
 leaf-disease-detection/
