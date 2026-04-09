@@ -78,19 +78,19 @@ A deep learning-based project for detecting diseases in plant leaves using YOLOv
    !python detect.py --weights runs/train/yolov5s_results/weights/best.pt --source test/images --save-conf
 
 YOLOv8
-Predict using trained YOLOv8 model:
+1. Predict using trained YOLOv8 model
    ```bash
    !yolo task=detect mode=predict model="runs/detect/train3/weights/best.pt" data=data.yaml source=test/images
 
 2. Outputs include:
 
-Predicted images with bounding boxes
-Confusion matrix and validation batch images
-Detection results saved to runs/detect/predict/
+   Predicted images with bounding boxes
+   Confusion matrix and validation batch images
+   Detection results saved to runs/detect/predict/
 
 📊 Analysis
-Visualize class distribution and number of images per class
-Example:
+    Visualize class distribution and number of images per class
+    Example:
     ```python
     import pandas as pd
     images_per_class = pd.DataFrame(map.values(), index=map.keys(), columns=["Number of Images"])
