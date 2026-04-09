@@ -7,7 +7,8 @@ A deep learning-based project for detecting diseases in plant leaves using YOLOv
 ## 📂 Dataset
 - Custom dataset of 30 leaf classes including Apple, Bell Pepper, Tomato, Potato, Strawberry, Grape, and others.
 - Each class contains labeled images in YOLO format (`.txt` files with bounding boxes and class IDs).
-- Labels and images are stored separately:
+- Labels and images are stored separately
+  
 dataset/
 
 ├── train/images
@@ -94,11 +95,11 @@ Visualize class distribution and number of images per class
 
 Example:
 
- ```python
- import pandas as pd
- images_per_class = pd.DataFrame(map.values(), index=map.keys(), columns=["Number of Images"])
- images_per_class['Labels'] = d.values()
- images_per_class
+   ```python
+   import pandas as pd
+   images_per_class = pd.DataFrame(map.values(), index=map.keys(), columns=["Number of Images"])
+   images_per_class['Labels'] = d.values()
+   images_per_class
      
 📁 Project Structure
 
