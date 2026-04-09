@@ -9,7 +9,7 @@ A deep learning-based project for detecting diseases in plant leaves using YOLOv
 - Each class contains labeled images in YOLO format (`.txt` files with bounding boxes and class IDs).
 - Labels and images are stored separately:
 - dataset/
-- 
+ 
 ├── train/images
 
 ├── train/labels
@@ -61,12 +61,12 @@ A deep learning-based project for detecting diseases in plant leaves using YOLOv
 
 ### YOLOv5
 1. Load dataset:
-```python
-import yaml
-with open('data.yaml', 'r') as f:
-  data = yaml.load(f, Loader=yaml.FullLoader)
-class_names = data['names']
-print(class_names)
+    ```python
+    import yaml
+    with open('data.yaml', 'r') as f:
+    data = yaml.load(f, Loader=yaml.FullLoader)
+    class_names = data['names']
+    print(class_names)
 
 2. Train YOLOv5 model (example):
    ```bash
