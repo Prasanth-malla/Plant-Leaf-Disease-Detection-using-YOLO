@@ -1,4 +1,4 @@
-# Leaf Disease Detection using YOLOv5 & YOLOv8
+# Plant Leaf Disease Detection using YOLOv5 & YOLOv8
 
 A deep learning-based project for detecting diseases in plant leaves using YOLOv5 and YOLOv8 object detection models.  
 
