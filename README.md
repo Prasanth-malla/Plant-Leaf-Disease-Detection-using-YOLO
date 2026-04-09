@@ -95,7 +95,7 @@ Visualize class distribution and number of images per class
 
 Example:
 
-    ```python
+    
     import pandas as pd
     images_per_class = pd.DataFrame(map.values(), index=map.keys(), columns=["Number of Images"])
     images_per_class['Labels'] = d.values()
